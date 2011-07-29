@@ -8,5 +8,23 @@
     <description>None</description>
     <copyright></copyright>
     <version></version>
+    
+    <entity entity-name="EbidProductListing" package-name="org.ofbiz.ebid"
+        title="eBid Product Attributes">
+        <field name="productStoreId" type="id-ne"/>
+        <field name="productId" type="id-ne"/>
+        <field name="userLoginId" type="id-long"/>
+        <field name="statusId" type="id-ne"/>
+        <prim-key field="productListingId"/>
+        <relation type="one" fk-name="EBID_PRODUCT" rel-entity-name="Product">
+            <key-map field-name="productId"/>
+        </relation>
+        <relation type="one" fk-name="EBID_STORE" rel-entity-name="ProductStore">
+            <key-map field-name="productStoreId"/>
+        </relation>
+        <relation type="one" fk-name="EBID_STATUS" rel-entity-name="StatusItem">
+            <key-map field-name="statusId"/>
+        </relation>
+    </entity>
 
 </entitymodel>
