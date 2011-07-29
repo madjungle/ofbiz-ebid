@@ -10,7 +10,7 @@
     <version></version>
     
     <entity entity-name="EbidProductListing" package-name="org.ofbiz.ebid"
-        title="eBid Product Attributes">
+        title="eBid Product Listing">
         <field name="productStoreId" type="id-ne"/>
         <field name="productId" type="id-ne"/>
         <field name="userLoginId" type="id-long"/>
