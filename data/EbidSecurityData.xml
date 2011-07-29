@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the Ebid Component." permissionId="EBID_VIEW"/>
+    <SecurityPermission description="Create operations in the Ebid Component." permissionId="EBID_CREATE"/>
+    <SecurityPermission description="Update operations in the Ebid Component." permissionId="EBID_UPDATE"/>
+    <SecurityPermission description="Delete operations in the Ebid Component." permissionId="EBID_DELETE"/>
+    <SecurityPermission description="ALL operations in the Ebid Component." permissionId="EBID_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="EBID_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="EBID_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="EBID_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="EBID_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="EBID_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="EBID_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="EBID_ADMIN"/>
+</entity-engine-xml>
