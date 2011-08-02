@@ -19,5 +19,20 @@
 -->
 
 <entity-engine-xml>
-    <ProductStoreCatalog productStoreId="90200" prodCatalogId="eBidCatalog" fromDate="2011-01-01 00:00:00.000"/>
+    <ProductStore productStoreId="90200" storeName="OFBiz eBid Store" companyName="Apache Ofbiz" title="Test OFBiz eBid Store"
+        subtitle="Part of the Open For Business Family of Open Source Software" daysToCancelNonPay="30" prorateShipping="Y" prorateTaxes="Y"
+        inventoryFacilityId="WebStoreWarehouse" oneInventoryFacility="Y" checkInventory="Y" reserveInventory="Y" balanceResOnOrderCreation="Y" reserveOrderEnumId="INVRO_FIFO_REC" requireInventory="N"
+        defaultLocaleString="en_US" defaultCurrencyUomId="USD" defaultSalesChannelEnumId="EBID_SALES_CHANNEL" allowPassword="Y" explodeOrderItems="N" retryFailedAuths="Y" reqReturnInventoryReceive="N"
+        headerApprovedStatus="ORDER_APPROVED" itemApprovedStatus="ITEM_APPROVED" digitalItemApprovedStatus="ITEM_APPROVED" headerDeclinedStatus="ORDER_REJECTED"
+        itemDeclinedStatus="ITEM_REJECTED" headerCancelStatus="ORDER_CANCELLED" itemCancelStatus="ITEM_CANCELLED" orderNumberPrefix="EBID"
+        authDeclinedMessage="There has been a problem with your method of payment. Please try a different method or call customer service."
+        authFraudMessage="Your order has been rejected and your account has been disabled due to fraud."
+        authErrorMessage="Problem connecting to payment processor; we will continue to retry and notify you by email."
+        storeCreditValidDays="90" storeCreditAccountEnumId="FIN_ACCOUNT"
+        visualThemeId="EC_DEFAULT" prodSearchExcludeVariants="Y" autoApproveInvoice="Y" shipIfCaptureFails="Y" autoApproveOrder="Y" showOutOfStockProducts="Y"/>
+    <ProductStoreCatalog productStoreId="90200" prodCatalogId="eBayCatalog" fromDate="2011-01-01 00:00:00.000"/>
+    <ProductStoreFacility productStoreId="90200" facilityId="WebStoreWarehouse" fromDate="2010-01-01 00:00:00.000"/>
+
+    <WebSite webSiteId="EBID_STORE" siteName="eBid Store" standardContentPrefix="http://demo.ofbiz.org" productStoreId="90200"/>
+
 </entity-engine-xml>
