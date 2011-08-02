@@ -22,6 +22,9 @@
     <ProductPricePurpose productPricePurposeId="EBID" description="eBid"/>
     <ProductCategoryType productCategoryTypeId="EBID_CATEGORY" description="eBid" hasTable="N" parentTypeId=""/>
     <ProductContentType productContentTypeId="EBID_DESCRIPTION" description="Detail Page for eBid"/>
+    <ProductPriceType description="Starting Bid Price" productPriceTypeId="STARTING_BID_PRICE"/>
+    <ProductPriceType description="Reserve Price" productPriceTypeId="RESERVE_PRICE"/>
+    <ProductPriceType description="Buy It Now Price" productPriceTypeId="LIST_PRICE_PRICE"/>
     
     <EnumerationType description="eBid Ship Types" enumTypeId="EBID_SHIP_TYPE" hasTable="N" parentTypeId=""/>
     <Enumeration description="Flat Rate Shipping" enumCode="FLAT_RATE" enumId="EBID_FLAT_RATE" sequenceId="01" enumTypeId="EBID_SHIP_TYPE"/>    
